@@ -13,15 +13,10 @@ To generate, follow these steps:
     1. Run `aggregate_monthly_gra2pes.py`
  
         - `inputs.sectors = ['total']` to sum up all sectors.
-
         - **Description:** Calculate average monthly emissions rate, regrid to EPSG 4326, convert moles to metric tons where applicable, output to NetCDF.
-
         - Outputs are stored in `/discover/nobackup/projects/gmao/geos_carb/embell/data/GRA2PES/<YYYY>/Month0<N>`
-
         - For easiest sync to GHGC S3 bucket, copy outputs to `/data/GRA2PES/for_ghgc/monthly_subset_regrid` directory or similar.
-
-    2. Double check using `double_checks/monthly_aggregates_double_check.py` 
-
+    2. Double check using `double_checks/monthly_aggregates_double_check.p0y` 
         - Prints `Great sum well done!` if the aggregate monthly output matches the validation aggregate to < 0.025% in the mean.
 
 <h2>Urban Dashboard city totals</h2>
