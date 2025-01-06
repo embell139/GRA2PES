@@ -9,9 +9,9 @@ These files contain TOTAL emissions, across all sectors, for five species: CO2, 
 <h2>EnA monthly emission rates</h2>
 - The EnA environment displays a monthly average of each species' emission rates, summed over all sectors. 
   To generate, follow these steps:
-    1. Run `aggregate_monthly_gra2pes.py`
-        - `inputs.sectors = ['total']` to sum up all sectors.
-        - *Description:* Calculate average monthly emissions rate, regrid to EPSG 4326, convert moles to metric tons where applicable, output to NetCDF.
+  1. Run `aggregate_monthly_gra2pes.py`
+    - `inputs.sectors = ['total']` to sum up all sectors.
+    - *Description:* Calculate average monthly emissions rate, regrid to EPSG 4326, convert moles to metric tons where applicable, output to NetCDF.
         - Outputs are stored in 
             `/discover/nobackup/projects/gmao/geos_carb/embell/data/GRA2PES/<YYYY>/Month0<N>`
         - For easiest sync to GHGC S3 bucket, copy outputs to 
