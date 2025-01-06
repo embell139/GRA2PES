@@ -22,7 +22,9 @@ To generate, follow these steps:
 
 <h2>Urban Dashboard city totals</h2>
 
-- The Urban Dashboard requires a minimized number of sectors, for effective visualization. Steps:
+The Urban Dashboard requires a minimized number of sectors, for effective visualization. 
+
+Steps to produce aggregated sectors:
 1. `sectoral_aggregation.py` 
     - `inputs.sum` keywords are the aggregated sector names, and their corresponding lists are the individual sectors to be included in each. 
     - **Description:** Simply add together native hourly data, duplicating the 12-hour, satdy/sundy/mondy output file format.
